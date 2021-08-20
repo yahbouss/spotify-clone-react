@@ -1,16 +1,20 @@
 import './Navbar.scss'
 
 import React from 'react'
+import { GoSearch } from "react-icons/go"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+    const [search, setSearch] = React.useState("")
     return (
         <div className='navbar'>
-            <div className="navbar__brand">
+            <a href="/" className="navbar__brand">
                 <h1>Spotify Clone</h1>
-            </div>
+            </a>
             <div className="navbar__nav">
-                <p className="navbar__nav-link">New Playlist</p>
-                <input type="text" placeholder='Song Search...'  className="navbar__nav-search" />
+                <input value={search} onChange={e=>setSearch(e.target.value)} type="text" placeholder='Song Search...'  className="navbar__nav-search" />
+                <Link to={`/search?search=${search}`}><GoSearch className="search"/></Link>
+                
             </div>
         </div>
     )

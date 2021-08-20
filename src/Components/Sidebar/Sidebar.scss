@@ -1,0 +1,54 @@
+.sidebar{
+    grid-area: menu;
+    margin-bottom: 0px;
+    background-color: rgba(82, 82, 82, 0.493);
+    border-right: 1px solid black;
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+    &__container{
+        max-width: 100%;
+    }      
+    &__create{
+        margin: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        border-radius: 17px;
+        background-color: rgba($color: #252525, $alpha: 0.3);
+        transition: 0.3s;
+        padding-left: 16px;
+        &:hover{
+            background-color: rgba($color: #252525, $alpha: 1);
+            cursor: pointer;
+            .icon{
+                color: white;
+            }
+        }
+    }
+    &__playlists{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.icon{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+
+.delete{
+    text-align:end;
+    margin-left: 3px;
+    &:hover{
+        color: rgb(255, 81, 81) !important;
+        
+    }
+}
+.one{
+    display: flex;
+    align-items: center;
+}

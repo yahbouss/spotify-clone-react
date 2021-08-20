@@ -1,3 +1,50 @@
 .navbar{
-    
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    &__brand{
+        justify-content: flex-start;
+        font-size: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 60px;
+    }
+    &__nav{
+        background-color: #f3f2f2;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 70px;
+        filter: drop-shadow(0 0 0.25rem #707070);
+        border-radius: 19px;
+        input{
+            background-color: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: 15px;
+            padding: 5px 2px;
+            font: 20px;
+            border: 0;
+            outline: none;
+            resize :none;
+            font-size: 20px;
+            font-weight: 500;
+            flex: 20;
+            &::placeholder{
+                font-size: 20px;
+                color: rgba(203, 202, 165, 0.36);
+            }
+        }
+    }
+}   
+
+.search{
+    font: black;
+    margin-right: 10px;
+    cursor: pointer;
 }
