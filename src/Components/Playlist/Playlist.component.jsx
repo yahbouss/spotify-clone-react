@@ -33,6 +33,7 @@ const Playlist = (props) => {
                         <th className="table__content-title">i</th>
                         <th className="table__content-title">Song</th>
                         <th className="table__content-title">Length</th>
+                        <th className="table__content-title">Artist</th>
                         <th className="table__content-title">Options</th>
                     </tr>
                     {songs.map((song,i)=>{
